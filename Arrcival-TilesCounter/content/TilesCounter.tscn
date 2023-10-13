@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://mods-unpacked/Arrcival-TilesCounter/content/TilesCounter.gd" type="Script" id=1]
+[ext_resource path="res://gui/fonts/FontHudPixelartMonospaced.tres" type="DynamicFont" id=2]
+
+[node name="TilesCounter" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+size = Vector2( 8, 2 )
+layoutWeights = Vector2( 0, 5 )
+
+[node name="TilesCount" type="Label" parent="."]
+margin_top = -2.0
+margin_right = 140.0
+margin_bottom = 30.0
+rect_scale = Vector2( 0.333, 0.333 )
+custom_colors/font_color = Color( 1, 0.92549, 0.839216, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "9999-9999"
+align = 1
